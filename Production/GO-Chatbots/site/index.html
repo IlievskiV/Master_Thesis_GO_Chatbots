@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Documentation for GO-Chatbots, a library for building Goal-Oriented chatbots">
+  
+  <link rel="shortcut icon" href="./img/favicon.ico">
+  <title>Home - GO-Chatbot Documentation</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="./css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="./css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="./css/highlight.css">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Home";
+    var mkdocs_page_input_path = "index.md";
+    var mkdocs_page_url = "/";
+  </script>
+  
+  <script src="./js/jquery-2.1.1.min.js"></script>
+  <script src="./js/modernizr-2.8.3.min.js"></script>
+  <script type="text/javascript" src="./js/highlight.pack.js"></script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href="." class="icon icon-home"> GO-Chatbot Documentation</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="./search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="current">
+	  
+          
+            <li class="toctree-l1 current">
+		
+    <a class="current" href=".">Home</a>
+    <ul class="subnav">
+            
+    <li class="toctree-l2"><a href="#documentation-for-the-goal-oriented-chatbots">Documentation for the Goal-Oriented Chatbots</a></li>
+    
+        <ul>
+        
+            <li><a class="toctree-l3" href="#the-notion-of-user-goal">The notion of user goal</a></li>
+        
+            <li><a class="toctree-l3" href="#user-and-agent-actions">User and agent actions</a></li>
+        
+        </ul>
+    
+
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="input/">Input</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Dialogue System</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="sources/dm/overview/">Overview</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="sources/dm/dialogue_sys/">GODialogSys</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Agents</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="sources/agents/overview/">Overview</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Environment</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="sources/environment/overview/">Overview</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="sources/environment/environment/">GOEnv</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Dialogue State Tracker</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="sources/dst/overview/">Overview</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Users</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="sources/user/overview/">Overview</a>
+                </li>
+    </ul>
+	    </li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href=".">GO-Chatbot Documentation</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href=".">Docs</a> &raquo;</li>
+    
+      
+    
+    <li>Home</li>
+    <li class="wy-breadcrumbs-aside">
+      
+        <a href="https://github.com/IlievskiV/GO-Chatbots/edit/master/docs/index.md"
+          class="icon icon-github"> Edit on GitHub</a>
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="documentation-for-the-goal-oriented-chatbots">Documentation for the Goal-Oriented Chatbots</h1>
+<p>In these pages, the documentation of the library for developing goal-oriented chatbots is provided. The goal-oriented chatbots are closed domain chatbots with a predetermined intent to help users complete a task. For example, the task could be a flight booking or restaurant reservation.</p>
+<p>This library is modeling the goal-oriented chatbots as a Partially Observable Markov Decision Process (POMDP) using the Reinforcement Learning (RL) set of algorithms. Therefore, there is an agent, acting in a dialogue environment and learning the dialogue policy by receiving reward signals.</p>
+<p>Since reinforcement learners require an environment to interact, conventional dialogue corpora cannot be used directly. For this reason, we need a simulator which will simulate the user behavior. Using this approach, on one side we have a simulated user with a predetermined goal to acheve, using the agent which is not aware of the user goal.</p>
+<p>Both of them are generating actions, the simulated user is generating the action based on its goal, while the agent is generating the action based on its beliefs learned from the training so far.</p>
+<h2 id="the-notion-of-user-goal">The notion of user goal</h2>
+<p>As we mentioned above, in this kind of chatbot scenario, the users are having goal. Therefore, we need to provide a formal goal definition. When the users are having goal, on one side they know some piece of information and on the other side they are searching for some other piece of information that they would like to know.</p>
+<p>These chunks of information, which are the point of interest, are called <em>slots</em>, such that the slot is having a <em>key name</em> (some general term) and a <em>value</em>, i.e. they act as a key-value pairs. Following the user's nature, we define two types of slots: <strong> inform </strong> and <strong> request </strong> slots. The <strong> inform </strong> slots have value, while the <strong> request </strong> slots do not have value. The slots are domain dependent and differ from domain to domain. Therefore, they are specified in the input, as it is explained in the <a href="#Input">Input</a> section.</p>
+<p>For example, in a restaurant booking scenario, the user might know the type of cuisine, for example <em>Indian</em>, but she might not know any restaurant serving that kind of food. Therefore, we will have an <strong> inform </strong> slot named <em>cuisine</em> with a value <em>Indian</em> and one <strong> request </strong> slot named <em>restaurant</em>. The chatbot should give an answer to that.</p>
+<p>In this system, the user goal is encoded in the following semantic structure:</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <em>{</em> <br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <em>"request_slots" : { ... }</em>, <br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <em>"inform_slots" : { ... }</em> <br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <em>}</em></p>
+<h2 id="user-and-agent-actions">User and agent actions</h2>
+<p>As we already mentioned, both, the agent and the user are taking actions. The user action is derived from its goal, the agent action is derived from its policy. In order to establish a convention in the system, the actions are all having same format. It is including the following info: type of the action, inform slots, request slots and the natural language representation.</p>
+<p>The type of action, or the dialogue act (intent) is describing the nature of the action. Since, for now there in only a rule based user simulator, the system supports 11 dialogue acts, which are the following: </p>
+<ul>
+<li>request</li>
+<li>inform</li>
+<li>confirm_question</li>
+<li>confirm_answer</li>
+<li>greeting</li>
+<li>closing</li>
+<li>multiple_choice</li>
+<li>thanks</li>
+<li>welcome</li>
+<li>deny</li>
+<li>not_sure</li>
+</ul>
+<p>The inform and request slots are same as in the goal, while the natural language representation is a sencente corresponding to the the action.</p>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="input/" class="btn btn-neutral float-right" title="Input">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+	  
+        </div>
+      </div>
+
+    </section>
+    
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+          <a href="https://github.com/IlievskiV/GO-Chatbots" class="fa fa-github" style="float: left; color: #fcfcfc"> GitHub</a>
+      
+      
+      
+        <span style="margin-left: 15px"><a href="input/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script src="./js/theme.js"></script>
+
+</body>
+</html>
+
+<!--
+MkDocs version : 0.16.3
+Build Date UTC : 2017-10-23 09:09:53
+-->

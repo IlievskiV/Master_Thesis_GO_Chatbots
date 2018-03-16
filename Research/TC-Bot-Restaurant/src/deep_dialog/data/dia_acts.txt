@@ -1,0 +1,8 @@
+request
+inform
+confirm_question
+confirm_answer
+closing
+multiple_choice
+thanks
+deny

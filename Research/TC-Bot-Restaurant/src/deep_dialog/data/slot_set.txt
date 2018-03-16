@@ -1,0 +1,12 @@
+city
+closing
+date
+moviename
+numberofpeople
+taskcomplete
+starttime
+theater
+ticket
+food
+pricerange
+addr

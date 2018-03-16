@@ -1,0 +1,12 @@
+closing
+taskcomplete
+ticket
+city
+food
+numberofpeople
+pricerange
+date
+addr
+type
+hasinternet
+hastv

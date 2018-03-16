@@ -1,0 +1,23 @@
+site_name: GO-Chatbot Documentation
+theme: readthedocs
+repo_url: https://github.com/IlievskiV/GO-Chatbots
+site_description: 'Documentation for GO-Chatbots, a library for building Goal-Oriented chatbots'
+
+
+dev_addr: '0.0.0.0:8000'
+
+pages:
+- Home: index.md
+- Input: input.md
+- Dialogue System:
+  - Overview: sources/dm/overview.md
+  - GODialogSys: sources/dm/dialogue_sys.md
+- Agents:
+  - Overview: sources/agents/overview.md
+- Environment:
+  - Overview: sources/environment/overview.md
+  - GOEnv: sources/environment/environment.md
+- Dialogue State Tracker:
+  - Overview: sources/dst/overview.md
+- Users:
+  - Overview: sources/user/overview.md

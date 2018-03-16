@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  <link rel="shortcut icon" href="../../../img/favicon.ico">
+  <title>GOEnv - GO-Chatbot Documentation</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../../../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="../../../css/highlight.css">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "GOEnv";
+    var mkdocs_page_input_path = "sources/environment/environment.md";
+    var mkdocs_page_url = "/sources/environment/environment/";
+  </script>
+  
+  <script src="../../../js/jquery-2.1.1.min.js"></script>
+  <script src="../../../js/modernizr-2.8.3.min.js"></script>
+  <script type="text/javascript" src="../../../js/highlight.pack.js"></script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href="../../.." class="icon icon-home"> GO-Chatbot Documentation</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="current">
+	  
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../../..">Home</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../../../input/">Input</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Dialogue System</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../dm/overview/">Overview</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../dm/dialogue_sys/">GODialogSys</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Agents</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../agents/overview/">Overview</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Environment</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../overview/">Overview</a>
+                </li>
+                <li class=" current">
+                    
+    <a class="current" href="./">GOEnv</a>
+    <ul class="subnav">
+            
+    <li class="toctree-l3"><a href="#goenv">GOEnv</a></li>
+    
+
+    <li class="toctree-l3"><a href="#step">step</a></li>
+    
+
+    <li class="toctree-l3"><a href="#reset">reset</a></li>
+    
+
+    <li class="toctree-l3"><a href="#close">close</a></li>
+    
+
+    <li class="toctree-l3"><a href="#seed">seed</a></li>
+    
+
+    <li class="toctree-l3"><a href="#configure">configure</a></li>
+    
+
+    </ul>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Dialogue State Tracker</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../dst/overview/">Overview</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Users</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../user/overview/">Overview</a>
+                </li>
+    </ul>
+	    </li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../../..">GO-Chatbot Documentation</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../../..">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>Environment &raquo;</li>
+        
+      
+    
+    <li>GOEnv</li>
+    <li class="wy-breadcrumbs-aside">
+      
+        <a href="https://github.com/IlievskiV/GO-Chatbots/edit/master/docs/sources/environment/environment.md"
+          class="icon icon-github"> Edit on GitHub</a>
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <p><span style="float:right;"><a href="https://github.com/matthiasplappert/keras-rl/blob/master/core/environment/environment.py#L18">[source]</a></span></p>
+<h3 id="goenv">GOEnv</h3>
+<pre><code class="python">core.environment.environment.GOEnv(simulation_mode=None, is_training=False, user_type_str='', user_path='', dst_type_str='', dst_path='', act_set=None, slot_set=None, feasible_actions=None, max_nb_turns=None, nlu_path='', nlg_path='')
+</code></pre>
+
+<p>The Environment with which the agent is interacting with. It extends the keras-rl class Env.
+Therefore, the following methods are implemented:</p>
+<ul>
+<li><code>step</code></li>
+<li><code>reset</code></li>
+<li><code>render</code></li>
+<li><code>close</code></li>
+<li><code>seed</code></li>
+<li><code>configure</code></li>
+</ul>
+<p><strong>Class members:</strong></p>
+<p>From <code>rl.Env</code> class:</p>
+<ul>
+<li><strong> reward_shape </strong>: the shape of the reward matrix</li>
+<li><strong> action_space </strong>: the space of possible actions</li>
+<li><strong> observation_space </strong>: the space of observations to ... (have to find the exact meaning)</li>
+</ul>
+<p>Own:</p>
+<ul>
+<li><strong> simulation_mode </strong>: the mode of the simulation, semantic frame or natural language sentences</li>
+<li><strong> is_training </strong>: flag indicating the training/testing mode</li>
+<li><strong> max_nb_turns </strong>: the maximal number of allowed dialogue turns. Afterwards, the dialogue is considered failed</li>
+<li><strong> usr </strong>: a simulated or real user making a conversation with the agent</li>
+<li><strong> state_tracker </strong>: the state tracker used for tracking the state of the dialogue</li>
+<li><strong> nlu_unit </strong>: the NLU unit for transforming the user utterance to a dialogue act</li>
+<li><strong> nlg_unit </strong>: the NLG unit for transforming the agent's action to a natural language sentence</li>
+<li><strong> act_set </strong>: the set of all dialogue acts</li>
+<li><strong> slot_set </strong>: the set of all dialogue slots</li>
+<li><strong> feasible_actions </strong>: list of templates described as dictionaries, corresponding to each action the agent might take
+        (dict to be specified)</li>
+<li><strong> reward_success </strong>: the signaled reward for successful dialogue</li>
+<li><strong> reward_failure </strong>: the signaled reward for failed dialogue</li>
+<li><strong> reward_neutral </strong>: the signaled reward for ongoing dialogue</li>
+</ul>
+<hr />
+<p><span style="float:right;"><a href="https://github.com/matthiasplappert/keras-rl/blob/master/core/environment/environment.py#L234">[source]</a></span></p>
+<h3 id="step">step</h3>
+<pre><code class="python">step(self, action)
+</code></pre>
+
+<p>Method for taking the environment one step further. In this case, to present the agent action to the user in order
+to make a response. Overrides the super class method.</p>
+<p><strong>Arguments:</strong></p>
+<ul>
+<li><strong> action </strong>: the last agent action</li>
+</ul>
+<p><strong> return </strong>: user's response to the agent's action in form of a state</p>
+<hr />
+<p><span style="float:right;"><a href="https://github.com/matthiasplappert/keras-rl/blob/master/core/environment/environment.py#L292">[source]</a></span></p>
+<h3 id="reset">reset</h3>
+<pre><code class="python">reset(self)
+</code></pre>
+
+<p>Method for resetting the dialogue state tracker and the user, called at the beginning of each new episode.
+Overrides the super class method.</p>
+<p>:return: the initial observation</p>
+<hr />
+<p><span style="float:right;"><a href="https://github.com/matthiasplappert/keras-rl/blob/master/core/environment/environment.py#L320">[source]</a></span></p>
+<h3 id="close">close</h3>
+<pre><code class="python">close(self)
+</code></pre>
+
+<hr />
+<p><span style="float:right;"><a href="https://github.com/matthiasplappert/keras-rl/blob/master/core/environment/environment.py#L325">[source]</a></span></p>
+<h3 id="seed">seed</h3>
+<pre><code class="python">seed(self, seed=None)
+</code></pre>
+
+<hr />
+<p><span style="float:right;"><a href="https://github.com/matthiasplappert/keras-rl/blob/master/core/environment/environment.py#L330">[source]</a></span></p>
+<h3 id="configure">configure</h3>
+<pre><code class="python">configure(self)
+</code></pre>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../../dst/overview/" class="btn btn-neutral float-right" title="Overview">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../overview/" class="btn btn-neutral" title="Overview"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+	  
+        </div>
+      </div>
+
+    </section>
+    
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+          <a href="https://github.com/IlievskiV/GO-Chatbots" class="fa fa-github" style="float: left; color: #fcfcfc"> GitHub</a>
+      
+      
+        <span><a href="../overview/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../../dst/overview/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script src="../../../js/theme.js"></script>
+
+</body>
+</html>

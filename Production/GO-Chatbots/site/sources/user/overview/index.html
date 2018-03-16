@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  <link rel="shortcut icon" href="../../../img/favicon.ico">
+  <title>Overview - GO-Chatbot Documentation</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../../../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="../../../css/highlight.css">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Overview";
+    var mkdocs_page_input_path = "sources/user/overview.md";
+    var mkdocs_page_url = "/sources/user/overview/";
+  </script>
+  
+  <script src="../../../js/jquery-2.1.1.min.js"></script>
+  <script src="../../../js/modernizr-2.8.3.min.js"></script>
+  <script type="text/javascript" src="../../../js/highlight.pack.js"></script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href="../../.." class="icon icon-home"> GO-Chatbot Documentation</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="current">
+	  
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../../..">Home</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../../../input/">Input</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Dialogue System</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../dm/overview/">Overview</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../dm/dialogue_sys/">GODialogSys</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Agents</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../agents/overview/">Overview</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Environment</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../environment/overview/">Overview</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../environment/environment/">GOEnv</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Dialogue State Tracker</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../dst/overview/">Overview</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Users</span>
+    <ul class="subnav">
+                <li class=" current">
+                    
+    <a class="current" href="./">Overview</a>
+    <ul class="subnav">
+            
+    <li class="toctree-l3"><a href="#gouser">GOUser</a></li>
+    
+
+    <li class="toctree-l3"><a href="#gorealuser">GORealUser</a></li>
+    
+
+    <li class="toctree-l3"><a href="#gosimulateduser">GOSimulatedUser</a></li>
+    
+
+    <li class="toctree-l3"><a href="#gorulebaseduser">GORuleBasedUser</a></li>
+    
+
+    <li class="toctree-l3"><a href="#gomodelbaseduser">GOModelBasedUser</a></li>
+    
+
+    </ul>
+                </li>
+    </ul>
+	    </li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../../..">GO-Chatbot Documentation</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../../..">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>Users &raquo;</li>
+        
+      
+    
+    <li>Overview</li>
+    <li class="wy-breadcrumbs-aside">
+      
+        <a href="https://github.com/IlievskiV/GO-Chatbots/edit/master/docs/sources/user/overview.md"
+          class="icon icon-github"> Edit on GitHub</a>
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <p><span style="float:right;"><a href="https://github.com/matthiasplappert/keras-rl/blob/master/core/user/users.py#L11">[source]</a></span></p>
+<h3 id="gouser">GOUser</h3>
+<pre><code class="python">core.user.users.GOUser(id=None, simulation_mode=None, goal_set=None)
+</code></pre>
+
+<p>Abstract Base Class of all type of Goal-Oriented conversational users. The user is taking an action after each turn.
+One user action is represented as a dictionary having the exact same structure as the agent action, which is:</p>
+<ul>
+<li><strong> diaact </strong>: the act of the action</li>
+<li><strong> inform_slots </strong>: the set of informed slots</li>
+<li><strong> request_slots </strong>: the set of request slots</li>
+<li><strong> nl </strong>: the natural language representation of the agent action</li>
+</ul>
+<p>Also, the user is having a goal to follow, which is also a dictionary with the same structure as the user or agent
+action, with the difference that all information is provided.</p>
+<p>Moreover, the agent is keeping its own internal state, for its last turn, represented as a dictionary, which is:</p>
+<ul>
+<li><strong> diaact </strong>: the user's dialogue act</li>
+<li><strong> inform_slots </strong>: the user's inform slots from its previous turn</li>
+<li><strong> request_slots </strong>: the user's request slots from its previous turn</li>
+<li><strong> history_slots </strong>: the history of all user's inform slots</li>
+<li><strong> rest_slots </strong>: the history of all user's slots</li>
+</ul>
+<p><strong>Class members:</strong></p>
+<ul>
+<li><strong> id </strong>: the id of the user</li>
+<li><strong> current_turn_nb </strong>: the number of the current dialogue turn</li>
+<li><strong> state </strong>: user internal state, keeping record of the past and current actions</li>
+<li><strong> simulation_mode </strong>: semantic frame or natural language sentence form of user utterances</li>
+<li><strong> goal_set </strong>: the set of goals for the user</li>
+<li><strong> goal </strong>: the user goal in the current dialogue turn</li>
+</ul>
+<hr />
+<p><span style="float:right;"><a href="https://github.com/matthiasplappert/keras-rl/blob/master/core/user/users.py#L100">[source]</a></span></p>
+<h3 id="gorealuser">GORealUser</h3>
+<pre><code class="python">core.user.users.GORealUser(id=None, goal_set=None)
+</code></pre>
+
+<p>Class connecting a real user, writing on the standard input. Extends the <code>GOUser</code> class.</p>
+<p><strong>Class members:</strong></p>
+<hr />
+<p><span style="float:right;"><a href="https://github.com/matthiasplappert/keras-rl/blob/master/core/user/users.py#L141">[source]</a></span></p>
+<h3 id="gosimulateduser">GOSimulatedUser</h3>
+<pre><code class="python">core.user.users.GOSimulatedUser(id=None, simulation_mode=None, goal_set=None, slot_set=None, act_set=None)
+</code></pre>
+
+<p>Abstract Base Class for all simulated users in the Goal-Oriented Dialogue Systems.
+Extends the <code>GOUser</code> class.</p>
+<p><strong>Class members:</strong></p>
+<ul>
+<li><strong> slot_set </strong>: the set of all slots in the dialogue scenario</li>
+<li><strong> act_set </strong>: the set of all acts (intents) in the dialogue scenario</li>
+<li>
+<p><strong> dialog_status </strong>: the status of the dialogue from the user perspective. The user is deciding whether the
+           dialogue is finished or not. The dialogue status could have the following value:</p>
+<ul>
+<li><strong> NO_OUTCOME_YET </strong>: the dialogue is still ongoing</li>
+<li><strong> SUCCESS_DIALOG </strong>: the dialogue was successful, i.e. the user achieved the goal</li>
+<li><strong> FAILED_DIALOG </strong>: the dialogue failed, i.e. the user didn't succeed to achieve the goal</li>
+</ul>
+</li>
+</ul>
+<hr />
+<p><span style="float:right;"><a href="https://github.com/matthiasplappert/keras-rl/blob/master/core/user/users.py#L235">[source]</a></span></p>
+<h3 id="gorulebaseduser">GORuleBasedUser</h3>
+<pre><code class="python">core.user.users.GORuleBasedUser(id=None, simulation_mode=None, goal_set=None, slot_set=None, act_set=None, init_inform_slots=None, ultimate_request_slot=None)
+</code></pre>
+
+<p>Abstract class representing a rule-based user in the Goal-Oriented Dialogue Systems.
+Since, it is a rule-based simulated user, it will be domain-specific.
+Extends the <code>GOUser</code> class.</p>
+<p>Class members:</p>
+<ul>
+<li>
+<p><strong> init_inform_slots </strong>: list of initial inform slots, such that if the current user goal is containing some
+               of them, they must appear in the initial user turn</p>
+</li>
+<li>
+<p><strong> ultimate_request_slot </strong> : the slot that is the actual goal of the user, and everything is around this slot.</p>
+</li>
+</ul>
+<hr />
+<p><span style="float:right;"><a href="https://github.com/matthiasplappert/keras-rl/blob/master/core/user/users.py#L897">[source]</a></span></p>
+<h3 id="gomodelbaseduser">GOModelBasedUser</h3>
+<pre><code class="python">core.user.users.GOModelBasedUser(id=None, simulation_mode=None, goal_set=None, slot_set=None, act_set=None, is_training=None, model_path=None)
+</code></pre>
+
+<p>Class representing a model based user in the Goal-Oriented Dialogue Systems.
+Extends the <code>GOUser</code> class.</p>
+<p>Class members:</p>
+<ul>
+<li><strong> is_training </strong>: boolean flag indicating the mode of using te model-based state tracker</li>
+<li><strong> model_path </strong>: the path to save or load the model</li>
+</ul>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+      
+        <a href="../../dst/overview/" class="btn btn-neutral" title="Overview"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+	  
+        </div>
+      </div>
+
+    </section>
+    
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+          <a href="https://github.com/IlievskiV/GO-Chatbots" class="fa fa-github" style="float: left; color: #fcfcfc"> GitHub</a>
+      
+      
+        <span><a href="../../dst/overview/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+    </span>
+</div>
+    <script src="../../../js/theme.js"></script>
+
+</body>
+</html>
