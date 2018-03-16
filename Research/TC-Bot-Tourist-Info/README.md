@@ -1,4 +1,4 @@
-# TC-Bot-Restaurant
+# TC-Bot-Tourist-Info
 
 This system is training a Goal-Oriented Chatbot in the Tourist Info domain, such that the knowledge is trnsfered from the Restaurant Booking Domain.
 
